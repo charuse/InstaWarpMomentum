@@ -1,0 +1,29 @@
+{
+  "Name": "InstaWarpMomentum",
+  "Author": "charuse",
+  "Description": "Insta warp, keep Mario's momentum",
+  "InstallDependencies": ["Syati_ObjectFactories", "ExtAreaObjMgr"],
+  "SupportedGames": [
+    "SB4E"
+  ],
+  "ModuleData" : [
+    {
+      "NameObjFactory" : [
+        {
+          "Name" : "InstaWarpMomentum",
+          "Function" : "createExtActor<InstaWarpMomentum>",
+          "Include" : "InstaWarpMomentum.h"
+        }
+      ]
+    },
+    {
+      "AreaObjMgr" : [
+        {
+          "Name" : "InstaWarpMomentum",
+          "MaxCount" : "64",
+          "Function" : "AreaObjContainer::createManager<AreaObjMgr>"
+        }
+      ]
+    }
+  ]
+}
